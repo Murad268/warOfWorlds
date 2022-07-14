@@ -1,0 +1,224 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+.damage {
+   width: 100%;
+   height: 120vh;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: rgba(255, 0, 0, 0.3);
+   visibility: hidden;
+}
+.youDied{
+   width: 100%;
+   height: 120vh;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background:url('../assets/images/youDied.webp') center center/cover no-repeat ;
+   visibility: hidden;
+   z-index: 2;
+}
+.youDied h1, .enemyDied h1 {
+   font-size: 120px;
+   text-align: center;
+}
+.enemyDied {
+   width: 100%;
+   height: 120vh;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background:url('../assets/images/enemyDied.jpg') center center/cover no-repeat ;
+   visibility: hidden;
+   z-index: 2;
+}
+body {
+   width: 100%;
+   height: 100vh;
+   background: url('../assets/images/city-1651993\ \(1\).jpg') center center/cover no-repeat;
+}
+
+.enemy__wrapper {
+   position: relative;
+   margin-top: 70px;
+}
+.enemy {
+   position: absolute;
+   top: 0;
+   left: 140px;
+   width: 800px;
+   height: 700px;
+   transition: all 0.4s;
+}
+.enemy div {
+   width: 100%;
+   height: 100%;
+}
+img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.enemy__weapons {
+   display: flex;
+   justify-content: space-between;
+   width: 400px;
+   position: absolute;
+   left: 30px;
+   top: 100px;
+}
+.enemy__weapon {
+   width: 80px;
+   height: 80px;
+   background: rgb(112, 50, 50);
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.about__weapon {
+   width: 300px;
+   height: max-content;
+   position: absolute;
+   top: 0;
+   left: 30px;
+   padding: 30px;
+   background: black;
+   color: white;
+   opacity: 0;
+}
+.weapon__name {
+   font-size: 20px;
+   margin-bottom: 20px;
+   font-weight: 900;
+}
+.desc {
+   font-size: 18px;
+   margin-bottom: 20px;
+   font-weight: 700;
+}
+.about__Damage {
+   font-size: 22px;
+   font-weight: 700;
+}
+.enemy__weapon img {
+   width: 60%;
+   height: 60%;
+   object-fit: cover;
+}
+
+.enemy__health {
+   width: 400px;
+   height: 60px;
+   background: black;
+   position: absolute;
+   left: 30px;
+}
+.enemy__health__line {
+   width: 100%;
+   background: red;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 800;
+   color: white;
+   font-size: 30px;
+}
+.audio {
+   opacity: 0;
+}
+.enemy__name {
+   position: absolute;
+   top: 220px;
+   left: 30px;
+   width: 400px;
+   height: 60px;
+   background-color: aqua;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 40px;
+   font-weight: 900;
+   color:rgb(112, 50, 50)
+}
+.gamer__wrapper {
+   position: absolute;
+   top: 300px;
+   right: 30px;
+}
+.main__gamer__wrapper {
+   display: flex;
+   align-items: center
+}
+.gamer {
+   width: 90px;
+   height: 90px;
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 100%;
+   margin-right: 10px;
+}
+.gamer img {
+   width: 60%;
+   height: 60%;
+   object-fit: cover;
+}
+
+.gamer__health {
+   width: 400px;
+   height: 50px;
+   background-color: green;
+}
+.gamer__health__line {
+   width: 100%;
+   height: 50px;
+   background-color: yellow;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 900;
+   font-size: 40px;
+   color: blue;
+}
+.gamer__weapons {
+   width: max-content;
+   height: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.gamer__weapon {
+   width: 80px;
+   height: 80px;
+   background: rgb(0, 206, 96);
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+
+}
+
+.gamer__weapon img {
+   width: 70%;
+   height: 70%;
+   object-fit: cover;
+}
+
+.gamer__name {
+   background:rgb(0, 206, 96);
+   font-weight: 900;
+   font-size: 50px;
+   width: max-content;
+   padding: 10px;
+   margin-left: 80px;
+}
